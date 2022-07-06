@@ -2,9 +2,26 @@ body {
   margin: 0;
   box-sizing: border-box;
 }
+a.donate_now {
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+
+  display: inline-block;
+  padding: 20px 24px;
+  background: #FF5959;
+  color: #fff;
+  text-decoration: none;
+}
+.container{
+  max-width: 780px;
+  margin: 0 auto;
+}
+
 
 /* Top Banner */
-section.top_banner {
+.top_banner {
   height: 50vh;
   display: flex;
   flex-direction: column;
@@ -18,8 +35,7 @@ section.top_banner {
   background-repeat: no-repeat;
   background-size: cover;
 }
-section.top_banner > .container {
-  max-width: 780px;
+.top_banner > .wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -28,28 +44,74 @@ section.top_banner > .container {
   text-align: center;
   color: #fff;
 }
-section.top_banner > .container h1 {
+.top_banner > .container h1 {
   font-weight: 700;
   font-size: 65px;
   line-height: 79px;
 
   margin: 0;
 }
-section.top_banner > .container p {
+.top_banner > .container p {
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
   letter-spacing: 1px;
 }
-section.top_banner > .container a {
-  border-radius: 5px;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 24px;
 
-  padding: 20px 24px;
-  background: #FF5959;
-  color: #fff;
-  text-decoration: none;
+
+/* Instant Donation */
+.instant_donation{
+  margin-top: 100px;
+  text-align: center;
 }
+.instant_donation h2{
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 54px;
+}
+.instant_donation p{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+
+  color: #707070;
+}
+.instant_donation .donation_amount{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.instant_donation .donation_amount span{
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+
+  display: block;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 45px 50px;
+  color: #707070;
+  background: #FAFAFA;
+}
+.instant_donation .donation_amount span.highlighted{
+  background: #FFEEEE;
+  border: 2px solid #FF5959;
+  border-radius: 5px;
+  color: #FF5959;
+}
+.instant_donation .manual_donation{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+
+  color: #B3B3B3;
+  border-bottom: 1px solid #DADADA;
+  margin-top: 30px;
+  padding-bottom: 10px;
+}
+.instant_donation .donate_now{
+  margin-top: 30px;
+}
+
 
