@@ -2,7 +2,7 @@ body {
   margin: 0;
   box-sizing: border-box;
 }
-a.donate_now {
+a.primary_button {
   border-radius: 5px;
   font-weight: 600;
   font-size: 20px;
@@ -10,15 +10,14 @@ a.donate_now {
 
   display: inline-block;
   padding: 20px 24px;
-  background: #FF5959;
+  background: #ff5959;
   color: #fff;
   text-decoration: none;
 }
-.container{
+.container {
   max-width: 780px;
   margin: 0 auto;
 }
-
 
 /* Top Banner */
 .top_banner {
@@ -28,9 +27,7 @@ a.donate_now {
   justify-content: center;
   align-items: center;
 
-  background-image: 
-    linear-gradient(black, black),
-    url(./assets/donation13.jpg);
+  background-image: linear-gradient(black, black), url(./assets/donation13.jpg);
   background-blend-mode: saturation;
   background-repeat: no-repeat;
   background-size: cover;
@@ -58,30 +55,29 @@ a.donate_now {
   letter-spacing: 1px;
 }
 
-
 /* Instant Donation */
-.instant_donation{
+.instant_donation {
   margin-top: 100px;
   text-align: center;
 }
-.instant_donation h2{
+.instant_donation h2 {
   font-weight: 700;
   font-size: 45px;
   line-height: 54px;
 }
-.instant_donation p{
+.instant_donation p {
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
 
   color: #707070;
 }
-.instant_donation .donation_amount{
+.donation_amount {
   display: flex;
   justify-content: center;
   gap: 20px;
 }
-.instant_donation .donation_amount span{
+.donation_amount span {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -91,27 +87,134 @@ a.donate_now {
   border-radius: 5px;
   padding: 45px 50px;
   color: #707070;
-  background: #FAFAFA;
+  background: #fafafa;
 }
-.instant_donation .donation_amount span.highlighted{
-  background: #FFEEEE;
-  border: 2px solid #FF5959;
+.donation_amount span.highlighted {
+  background: #ffeeee;
+  border: 2px solid #ff5959;
   border-radius: 5px;
-  color: #FF5959;
+  color: #ff5959;
 }
-.instant_donation .manual_donation{
+.instant_donation .manual_donation {
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
   text-align: center;
 
-  color: #B3B3B3;
-  border-bottom: 1px solid #DADADA;
+  display: block;
+  color: #b3b3b3;
+  border-bottom: 1px solid #dadada;
   margin-top: 30px;
   padding-bottom: 10px;
 }
-.instant_donation .donate_now{
+.instant_donation .primary_button {
   margin-top: 30px;
 }
 
+/* Donation Plan */
+.donation_plan {
+  margin-top: 100px;
+  text-align: center;
+  max-width: 1240px;
+}
+.donation_plan > h2 {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 54px;
+}
+.donation_plan > p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+
+  color: #707070;
+}
+.donation_plan .plan_box {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+
+  margin-top: 30px;
+}
+.plan_box div {
+  width: 360px;
+  height: 300px;
+  padding: 20px;
+  border-radius: 5px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.plan_box div img {
+  width: 58.13px;
+  height: 49.77px;
+  object-fit: cover;
+  margin-top: 40px;
+}
+.plan_box div h4 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+
+  color: #121212;
+  margin-bottom: 0;
+}
+.plan_box div p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: left;
+
+  color: #707070;
+}
+.plan_box div.food_plan {
+  background: rgba(79, 157, 166, 0.1);
+}
+.plan_box div.family_plan {
+  background: rgba(255, 89, 89, 0.1);
+}
+.plan_box div.child_plan {
+  background: rgb(254, 244, 214);
+}
+
+
+/* Donation Promotion */
+.donation_promotion{
+  max-width: 1024px;
+  margin: 100px auto 0;
+
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;  
+}
+.donation_promotion .promotion_box{
+  flex-basis: 40%;
+}
+.promotion_box h1{
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 54px;
+}
+.promotion_box p{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #707070;
+}
+.promotion_box .primary_button{
+  margin-top: 30px;
+}
+.donation_promotion .promotion_image{
+  width: 400px;
+  height: 500px;
+  flex-basis: 55%;
+}
+.promotion_image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
 
